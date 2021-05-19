@@ -35,7 +35,7 @@ public class VmtCountyController {
 	@PostMapping(value = "/vmtCounty", produces = MediaType.APPLICATION_JSON_VALUE, consumes = {"application/json; charset=utf-8; application/x-www-form-urlencoded"})
 	@ResponseBody
 	public ResponseEntity <VmtCountyDTO> create(@RequestBody VmtCountyDTO dto) {
-	    return new ResponseEntity<>(service.save(dto), HttpStatus.OK);
+	    return new ResponseEntity<>(service.save(dto), HttpStatus.CREATED);
 	}
 	
 	@GetMapping("/vmtCounty/{id}")
