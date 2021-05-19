@@ -31,15 +31,15 @@ public class VmtCountyDTO extends Response{
     private String stateName;
 
 	@JsonProperty("date")
-    @NotNull(message = "el campo nombres es obligatorio")
+    @NotNull(message = "el campo date es obligatorio")
     private LocalDate date;
 
 	@JsonProperty("countyVmt")
-    @NotNull(message = "el campo nombres es obligatorio")
+    @NotNull(message = "el campo countyVmt es obligatorio")
     private Integer countyVmt;
 
 	@JsonProperty("baselinejanVmt")
-    @NotNull(message = "el campo nombres es obligatorio")
+    @NotNull(message = "el campo baselinejanVmt es obligatorio")
     private Integer baselinejanVmt;
 
 	@JsonProperty("percent_change_from_jan")
