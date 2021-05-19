@@ -11,7 +11,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: qpalwosk10
-      MYSQL_DATABASE: censo
+      MYSQL_DATABASE: demo
     ports:
       - "3333:3306"
     volumes:
